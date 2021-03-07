@@ -2,14 +2,10 @@ import telebot
 import random
 import glob
 import os
-
-
-
-#ggggggggggggggggggggggggggggggggggggggggggggg
- 
 from telebot import types
 
-path = r'\photos'
+
+path = r'C:\Users\Gigabyte\Desktop\bot\photos'
 
 bot = telebot.TeleBot('1116253924:AAF13mSOZsJspMR_c8WtXFBUqwMVWkRnqvU')
 
