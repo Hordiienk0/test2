@@ -5,15 +5,15 @@ import os
  
 from telebot import types
 
-path = r'D:\games\python project\bot\telegram\Exported Data_files'
+path = r'photos'
 
-bot = telebot.TeleBot('1123627372:AAF33rpKAdLEz91i_z2f9ejmuXvnDRRsN30')
+bot = telebot.TeleBot('1116253924:AAF13mSOZsJspMR_c8WtXFBUqwMVWkRnqvU')
 
 @bot.message_handler(commands=['start'])
 def welcome(message):
     # keyboard
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    item1 = types.KeyboardButton("Anime")
+    item1 = types.KeyboardButton("Hentai")
     markup.add(item1)
  
     bot.send_message(message.chat.id, "Добро пожаловать, {0.first_name}!\nЯ - <b>{1.first_name}</b>,".format(message.from_user, bot.get_me()),
