@@ -5,7 +5,7 @@ import os
 from telebot import types
 
 
-path = r'C:\Users\Gigabyte\Desktop\bot\photos'
+path = r'photos'
 
 bot = telebot.TeleBot('1116253924:AAF13mSOZsJspMR_c8WtXFBUqwMVWkRnqvU')
 
