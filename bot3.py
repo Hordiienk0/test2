@@ -5,7 +5,7 @@ import os
  
 from telebot import types
 
-path = r'photos'
+path = r'C:\\Users\\Gigabyte\\Desktop\\bot\\photos'
 
 bot = telebot.TeleBot('1116253924:AAF13mSOZsJspMR_c8WtXFBUqwMVWkRnqvU')
 
@@ -13,7 +13,7 @@ bot = telebot.TeleBot('1116253924:AAF13mSOZsJspMR_c8WtXFBUqwMVWkRnqvU')
 def welcome(message):
     # keyboard
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    item1 = types.KeyboardButton("Hentai")
+    item1 = types.KeyboardButton("I want hentai")
     markup.add(item1)
  
     bot.send_message(message.chat.id, "Добро пожаловать, {0.first_name}!\nЯ - <b>{1.first_name}</b>,".format(message.from_user, bot.get_me()),
@@ -21,7 +21,7 @@ def welcome(message):
  
 @bot.message_handler(content_types=['text'])
 def send_rand_photo(message):
-    if message.text == 'Anime':
+    if message.text == 'I want hentai':
 
         all_photo_in_directory=os.listdir(path)
         random_photo=random.choice(all_photo_in_directory)
